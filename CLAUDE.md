@@ -13,6 +13,8 @@ Tech stack:
 Page
 - Don't add NavMain in page
 - Wrap all in <OCWrapperPage> and don't wrapp it in <OCContent>
+- For data past across the page using queryParams
+- For data across the component using Pinia Store
 
 Form
 - Create or Edit form component naming pageName + Form
