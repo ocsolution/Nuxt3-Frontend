@@ -10,6 +10,9 @@ Tech stack:
 - Pinia for state management
 - kedtec-module — shared component/composable/util layer
 
+API
+- For backend we use only 2 methods get and post[create, update, get]
+
 Page
 - Don't add NavMain in page
 - Wrap all in <OCWrapperPage> and don't wrapp it in <OCContent>
