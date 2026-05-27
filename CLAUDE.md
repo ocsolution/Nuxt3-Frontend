@@ -12,6 +12,7 @@ Tech stack:
 
 Page
 - Don't create NavMain in page
+- Put all in <OCWrapperPage> and don't wrapp it in <OCContent>
 
 Coding rules:
 - Always use <script setup lang="js"> (never TypeScript)
