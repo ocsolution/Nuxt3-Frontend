@@ -48,6 +48,7 @@ Coding rules:
 OCTable slot naming rule:
 - When using render: '#SlotName', the slot name MUST be different from the column's data field name
   (e.g. data: 'CreatedBy', render: '#CreatedBySlot') to avoid DataTables internal collision
+- Table actions @action-click="(action) => fnTableAction(action, cellData) param action is string not object
 - Create position it in
  ```
  <template #headerRight>
@@ -58,7 +59,7 @@ OCTable slot naming rule:
           icon="ri-add-circle-line"
           @click="fnClickBtnHeader"
         />
-      </template>
+</template>
  ```
 - Table actions
 ```
