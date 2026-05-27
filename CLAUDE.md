@@ -15,6 +15,17 @@ Page
 - Wrap all in <OCWrapperPage> and don't wrapp it in <OCContent>
 - For data past across the page using queryParams
 - For data across the component using Pinia Store
+- For delete with confirm using const 
+```
+confirm = useConfirmStore();
+confirm.show({
+    message: `${data.rowData.Code} ${t("do_you_want_to_delete")}`,
+    type: "delete",
+    onConfirm: () => {
+    deleteData(data.rowData.Id);
+    },
+});
+```
 
 Form
 - Create or Edit form component naming pageName + Form
