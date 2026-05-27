@@ -61,15 +61,27 @@ OCTable slot naming rule:
         />
 </template>
  ```
+- For render table template use with multiple data on columns field data put data null
+```
+// columns
+{ title: t('created_by'), data: null, render: '#CreatedBySlot' }
+// Template
+<template #CreatedBySlot="{ cellData }">
+    <div class="flex flex-col">
+        <span>{{ cellData.CreatedBy }}</span>
+        <span class="text-xs text-gray-400">{{ $ocdate(cellData.CreatedDate).format() }}</span>
+    </div>
+</template>
+```
 - Table actions
 ```
 <template #actions="{ cellData }">
-                <OCTblBtns :items="[
-                    { type: 'view' },
-                    { type: 'edit' },
-                    { type: 'delete' },
-                ]" @action-click="(action) => fnTableAction(action, cellData)" />
-            </template>
+    <OCTblBtns :items="[
+        { type: 'view' },
+        { type: 'edit' },
+        { type: 'delete' },
+    ]" @action-click="(action) => fnTableAction(action, cellData)" />
+</template>
 ```
 
 Column render pattern:
