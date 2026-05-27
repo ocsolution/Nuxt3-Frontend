@@ -10,6 +10,9 @@ Tech stack:
 - Pinia for state management
 - kedtec-module — shared component/composable/util layer
 
+Page
+- Don't create NavMain in page
+
 Coding rules:
 - Always use <script setup lang="js"> (never TypeScript)
 - Always use <style scoped lang="scss">
