@@ -11,8 +11,11 @@ Tech stack:
 - kedtec-module — shared component/composable/util layer
 
 Page
-- Don't create NavMain in page
-- Put all in <OCWrapperPage> and don't wrapp it in <OCContent>
+- Don't add NavMain in page
+- Wrap all in <OCWrapperPage> and don't wrapp it in <OCContent>
+
+Form
+- Create or Edit form component naming pageName + Form
 
 Coding rules:
 - Always use <script setup lang="js"> (never TypeScript)
